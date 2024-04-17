@@ -11,8 +11,8 @@
 --| ---------------------------------------------------------------------------
 --|
 --| FILENAME      : TDM4.vhd
---| AUTHOR(S)     : Capt Phillip Warner
---| CREATED       : 03/2017
+--| AUTHOR(S)     : Capt Phillip Warner, C3C Jack West
+--| CREATED       : 03/2017 (4/15/2024)
 --| DESCRIPTION   : This file implements a 4 to 1 Time Division MUX (TDM).
 --|					Input and output data has a variable width set by k_WIDTH.
 --|					An internal MUX select line is connected to a 2 bit counter 
@@ -49,6 +49,7 @@
 --|    s_<signal name>          = state name
 --|
 --+----------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
@@ -102,4 +103,3 @@ begin
 			   "1110";
 		
 end behavioral;
-
